@@ -68,9 +68,33 @@ After data cleaning, a new column `Year` was created by extracting the first fou
 
 These were all done in the Power Query Editor. 
 
-Outside Power Query Editor, a `DateTable` was created using the minimum and maximum date from the `DateAquired`. The table contained columns for `Date`, `year`, `Month`, `Month Number`, and `Quarter`. This table was marked as the date table. A new relationship was then created between the `DateTable` and the `DateAquired`. 
+Outside Power Query Editor, a `DateTable` was created using the minimum and maximum date from the `DateAquired`. The table contained columns for `Date`, `year`, `Month`, `Month Number`, and `Quarter`. This table was marked as the date table. 
 
-In addition, I created new measures and new columns to provide in-depth insights into the various records. Some of these measures and columns include:
+New relationships were created between the tables. These include:
+
+* DateTable[Date] and Artworks[DateAquired].
+* ArtworkArtists[ObjectID] and Artworks[ObjectID].
+* ArtworkArtists[ConstituentID] and Artists[ConstituentID]. 
+
+In addition, I created new measures and new columns (for different tables) to provide in-depth insights into the various records. Some of these measures and columns include:
+
+**Artworks Table**
+* **ArtistName(s)**: This column was created to show all the names of the artists that collaborated on the artworks. This was done by filtering from the `ArtworkArtists` table using the `ObjectID`.
+* **CollaborationNumber**: This column was created to show the number of artists that collaborated on each artwork.
+
+**Measures**
+* **Total Artists**: This counts the total number of artists.
+*  **Total Artworks**: This counts the total number of artworks on display in the museum.
+*  **Most Prolific Artist**: This shows the artist with the highest number of artworks on display in the museum or the highest numberof collaborations.
+*  **Most Recent Acquisition**: This shows the artwork that was last acquired by the museum.
+*  **Oldest Artwork**: This shows the earliest artwork which was acquired by the museum.
+
+Other tables were further created to help wih the analysis. These include:
+
+* **CountryList**: This table had the list of all the nationalities of the artists with their corresponding countries. The data category forthe country column was chaged to `Country/Region`. A relationship was the created between the CountryList[Nationality] and Artists[Nationality].
+* **ArtistImage**: This table was created with the top artists in mind. It had the `ArtistName` and `Image URL` columns. This table was meant to be used as a tooltip. The date category for the Image URL column was changed to Image URL. A relationship was created between ArtistImage[ArtistName] and Artists[ArtistName].
+
+
 
 
 
