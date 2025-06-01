@@ -91,8 +91,8 @@ In addition, I created new measures and new columns (for different tables) to pr
 
 Other tables were further created to help wih the analysis. These include:
 
-* **CountryList**: This table had the list of all the nationalities of the artists with their corresponding countries. The data category forthe country column was chaged to `Country/Region`. A relationship was the created between the CountryList[Nationality] and Artists[Nationality].
-* **ArtistImage**: This table was created with the top artists in mind. It had the `ArtistName` and `Image URL` columns. This table was meant to be used as a tooltip. The date category for the Image URL column was changed to Image URL. A relationship was created between ArtistImage[ArtistName] and Artists[ArtistName].
+* **CountryList**: This table had the list of all the nationalities of the artists with their corresponding countries. The data category for the country column was changed to `Country/Region`. A relationship was the created between the CountryList[Nationality] and Artists[Nationality].
+* **ArtistImage**: This table was created with the top artists in mind. It had the ArtistName and the Image URL of the artists listed. This table was meant to be used as a tooltip. The date category for the Image URL column was changed to `Image URL`. A relationship was created between ArtistImage[ArtistName] and Artists[ArtistName].
 
 
 
