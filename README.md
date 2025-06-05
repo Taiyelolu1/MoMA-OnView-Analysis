@@ -60,7 +60,7 @@ The data for this project was collected from [Maven Analytics Playground](https:
 ## Data Cleaning & Preparation
 The data cleaning process was done using the Power Query Editor in Power BI. Some major operations such as removal of unwanted columns were done and other text operations such as capitalising, trimming, and replacing values were also carried out on some columns. The [M Query Codes] from the Power Query Editor have been attached to this repository. Please note that the Power Query Editor automatically writes/generates these codes based on the steps applied in the editor.
 
-After data cleaning, a new column `Year` was created by extracting the first four (4) digits from the `Date` column. I made sure `Date` was first in the tetx datatype to make the extraction possible. Another major step taken was creating a bridge table `ArtworkArtists` so that each artist-arwork pairing has its own row. The various steps taken to achieve this include:
+After data cleaning, a new column `Year` was created by extracting the first four (4) digits from the `Date` column. I made sure `Date` was first in the text datatype to make the extraction possible. Another major step taken was creating a bridge table `ArtworkArtists` so that each artist-arwork pairing has its own row. The various steps taken to achieve this include:
 
 * Duplicated the `Artworks` table, keeping only columns; `ObjectID`, `Title`, `ConstituentID`, `Year` and `DateAquired`.
 * Reordered the columns and change the table name to `ArtworkArtists`.
@@ -92,7 +92,71 @@ In addition, I created new measures and new columns (for different tables) to pr
 Other tables were further created to help wih the analysis. These include:
 
 * **CountryList**: This table had the list of all the nationalities of the artists with their corresponding countries. The data category for the country column was changed to `Country/Region`. A relationship was the created between the CountryList[Nationality] and Artists[Nationality].
-* **ArtistImage**: This table was created with the top artists in mind. It had the ArtistName and the Image URL of the artists listed. This table was meant to be used as a tooltip. The date category for the Image URL column was changed to `Image URL`. A relationship was created between ArtistImage[ArtistName] and Artists[ArtistName].
+* **ArtistImage**: This table was created with the top artists in mind. It had the ArtistName and the Image URL of the artists listed. This table was meant to be used as a tooltip. The data category for the Image URL column was changed to `Image URL`. A relationship was created between ArtistImage[ArtistName] and Artists[ArtistName].
+
+Click [here] to view the `DAX functions` used to create the `measures`, `calculated columns`, and `Datetable`.
+
+## Data Model
+I created relationships between multiple tables. These include:
+
+* DateTable[Date] and Artworks[DateAquired].
+* ArtworkArtists[ObjectID] and Artworks[ObjectID].
+* ArtworkArtists[ConstituentID] and Artists[ConstituentID].
+* CountryList[Nationality] and Artists[Nationality].
+* ArtistImage[ArtistName] and Artists[ArtistName].
+
+![Data Model for MoMA OnView](https://github.com/user-attachments/assets/d1ba840a-4826-4c73-8bc7-aeef2ea0b56c)
+
+
+## Data Analysis & Visualization
+After cleaning and prepping the data, I began with my analysis and visualization. The visualization was divided into five (5) report pages for easy navigation and clarity of analysis. These reports were used to effectively visualize key insights from this analysis.
+
+Some Key Insights from the data visualization are summarized below:
+
+1. **Overview**: This section gives an overwiew of the whole data.
+   * There were a total of **661** artists.
+   * There were a total of **1,142** artworks on display in MoMA. 
+   * The most prolific artist (artist with the highest amount of artwork done) was **Robert Frank**.
+   * The most recently acquired artwork was **Veleuro**.
+   * The year with the **highest number of acquired artworks** was **1934** with a total of 46 artworks acquired in that year.
+   * The years **1932, 1962, 1987 and 1993** remain the years with the **least number of acquired artworks**.
+
+   ![MoMA OnView-1](https://github.com/user-attachments/assets/151ae75c-a1ed-4456-9fba-1e2c1ac6a6c6)
+
+
+2. **Artwork Info**: This section gives information about the Artworks. This covers the ObjectID, Title, ArtistName(s), Year, DateAquired and OnView (location in MoMA) of the artworks. It shows the picture of the artwork when a title is selected or when hovering on the table. There is also a search bar to narrow the search by Title or ArtistName(s).
+   * Most recent acquired artwork is **Veleuro**.
+   * Oldest artwork is **Self-Portrait with Palette**.
+
+![MoMA OnView-2](https://github.com/user-attachments/assets/a381cd05-38f6-4f84-a2fa-6f9cea506818)
+
+
+3. **Artwork Breakdown**: This section gives the distribution of the atworks based on different categories.
+   * Top 5 Artworks by Classification include; Painting, Photograph, Drawing, Sculpture and Design.
+   * Top 5 Artworks by Medium include; Oil on canvas, Gelatin silver print, Casein tempera on hardboard, Bronze and Gelatin silver print, printed 1997.
+   * Total Artworks by Department was; Painting & Sculpture (39.84%), Drawing & prints (23.12%), Photography (19.7%), Architecture & Design (15.5%), Media & performance (1.66%) and Film (0.18).
+   It also shows the distribution of artowrks in various locations of the museum in a table.
+
+![MoMA OnView-3](https://github.com/user-attachments/assets/e31e3eb6-ab41-494f-94c8-32c419ac9f7d)
+
+
+4. **Artist Breakdown**: This section shows the distribution of artists based on diffferent categories.
+   * The map visual showing Total Artists by Country shows the number of artists in the countries based on gradient colours (the darker the colour, the higher the number). The country with the highest number of artists was United states of America with a total of 295 artists.
+   * The distibution of Artists by Gender was; Male (64.9%), Female (28.9%), Unknown (6.05%) and Transgender woman (0.15).
+   * Top 5 Artists by Artwork count were Robert Frank (55), Henri Matisse (38), Pablo Picasso (34), Jacob Lawrence (31), and Unidentified photographer (29).
+
+   ***There is a tooltip applied to the Bar Chart showing Top 5 Artists by Artwork Count. This tooltip allows you see the image of the Artists when you hover on the chart***.
+
+![MoMA OnView-4](https://github.com/user-attachments/assets/d1bd6f8a-b05c-4ac7-b62a-a77a812d00f3)
+
+
+5. **Artist Info**: This sections shows a table representing information about the various artists. These include: ArtistName, Country, Gender, BirthYear, DeathYear and Artwork Count.
+
+![MoMA OnView-5](https://github.com/user-attachments/assets/a445844a-474a-4746-89d1-f2ab63deba58)
+
+
+ 
+
 
 
 
