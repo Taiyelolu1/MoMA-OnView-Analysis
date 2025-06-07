@@ -113,9 +113,9 @@ After cleaning and prepping the data, I began with my analysis and visualization
 
 Some Key Insights from the data visualization are summarized below:
 
-1. **Overview**: This section gives an overwiew of the whole data.
-   * There were a total of **661** artists.
-   * There were a total of **1,142** artworks on display in MoMA. 
+1. **Overview**: This section gives an overview of the whole data.
+   * There was a total of **661** artists.
+   * There was a total of **1,142** artworks on display in MoMA. 
    * The most prolific artist (artist with the highest amount of artwork done) was **Robert Frank**.
    * The most recently acquired artwork was **Veleuro**.
    * The year with the **highest number of acquired artworks** was **1934** with a total of 46 artworks acquired in that year.
@@ -131,11 +131,11 @@ Some Key Insights from the data visualization are summarized below:
 ![MoMA OnView-2](https://github.com/user-attachments/assets/a381cd05-38f6-4f84-a2fa-6f9cea506818)
 
 
-3. **Artwork Breakdown**: This section gives the distribution of the atworks based on different categories.
-   * Top 5 Artworks by Classification include; Painting, Photograph, Drawing, Sculpture and Design.
-   * Top 5 Artworks by Medium include; Oil on canvas, Gelatin silver print, Casein tempera on hardboard, Bronze and Gelatin silver print, printed 1997.
-   * Total Artworks by Department was; Painting & Sculpture (39.84%), Drawing & prints (23.12%), Photography (19.7%), Architecture & Design (15.5%), Media & performance (1.66%) and Film (0.18).
-   It also shows the distribution of artowrks in various locations of the museum in a table.
+3. **Artwork Breakdown**: This section gives the distribution of the artworks based on different categories.
+   * Top 5 Artworks by Classification include Painting, Photograph, Drawing, Sculpture and Design.
+   * Top 5 Artworks by Medium include Oil on canvas, Gelatin silver print, Casein tempera on hardboard, Bronze and Gelatin silver print, printed 1997.
+   * Total Artworks by Department was Painting & Sculpture (39.84%), Drawing & prints (23.12%), Photography (19.7%), Architecture & Design (15.5%), Media & performance (1.66%) and Film (0.18).
+   It also shows the distribution of artworks in various locations of the museum in a table.
 
 ![MoMA OnView-3](https://github.com/user-attachments/assets/e31e3eb6-ab41-494f-94c8-32c419ac9f7d)
 
@@ -154,6 +154,23 @@ Some Key Insights from the data visualization are summarized below:
 
 ![MoMA OnView-5](https://github.com/user-attachments/assets/a445844a-474a-4746-89d1-f2ab63deba58)
 
+
+## Conclusion
+This project provided a comprehensive overview of the artist and artwork landscape within the Museum of Modern Art (MoMA) collection. With a total of 661 artists and 1,142 artworks, the data analysis revealed Robert Frank as the most prolific artist, and Veleuro as the most recently acquired piece. The year 1934 stood out historically as the most active acquisition period, while years like 1932, 1962, 1987, and 1993 showed minimal acquisitions.
+
+A detailed breakdown by classification and medium highlighted the dominance of traditional forms such as painting and photography, while department-level data showed Painting & Sculpture held the largest share of artworks. From a demographic perspective, the data indicated a notable gender imbalance, with male artists comprising nearly 65% of the dataset and a dominant representation from the United States.
+
+The project also enhanced user engagement with interactive elements like search functionality, hover tooltips, and embedded artwork images—allowing for a more immersive and informative experience.
+
+## Recommendation
+1. **Promote Gender and Cultural Diversity**
+The data suggests a significant gender and regional imbalance in the collection. MoMA may benefit from initiatives to acquire and feature more works from underrepresented groups—particularly female, non-binary, and artists from less represented countries.
+
+2. **Digitize and Showcase Historical Artworks**
+Given the presence of artworks from various decades, digitizing older pieces and providing context around their historical significance could enhance educational value and engagement.
+
+3. **Highlight Acquisition Trends**
+Insights such as the surge in 1934 acquisitions could be explored through special exhibitions or storytelling initiatives, offering the public a deeper understanding of MoMA's evolving curatorial strategy. 
 
  
 
