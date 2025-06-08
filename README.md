@@ -134,15 +134,15 @@ Some Key Insights from the data visualization are summarized below:
 3. **Artwork Breakdown**: This section gives the distribution of the artworks based on different categories.
    * Top 5 Artworks by Classification include Painting, Photograph, Drawing, Sculpture and Design.
    * Top 5 Artworks by Medium include Oil on canvas, Gelatin silver print, Casein tempera on hardboard, Bronze and Gelatin silver print, printed 1997.
-   * Total Artworks by Department was Painting & Sculpture (39.84%), Drawing & prints (23.12%), Photography (19.7%), Architecture & Design (15.5%), Media & performance (1.66%) and Film (0.18).
+   * Total Artworks by Department was Painting & Sculpture (39.84%), Drawing & prints (23.12%), Photography (19.7%), Architecture & Design (15.5%), Media & performance (1.66%) and Film (0.18%).
    It also shows the distribution of artworks in various locations of the museum in a table.
 
 ![MoMA OnView-3](https://github.com/user-attachments/assets/e31e3eb6-ab41-494f-94c8-32c419ac9f7d)
 
 
-4. **Artist Breakdown**: This section shows the distribution of artists based on diffferent categories.
+4. **Artist Breakdown**: This section shows the distribution of artists based on different categories.
    * The map visual showing Total Artists by Country shows the number of artists in the countries based on gradient colours (the darker the colour, the higher the number). The country with the highest number of artists was United states of America with a total of 295 artists.
-   * The distibution of Artists by Gender was; Male (64.9%), Female (28.9%), Unknown (6.05%) and Transgender woman (0.15).
+   * The distibution of Artists by Gender was; Male (64.9%), Female (28.9%), Unknown (6.05%) and Transgender woman (0.15%).
    * Top 5 Artists by Artwork count were Robert Frank (55), Henri Matisse (38), Pablo Picasso (34), Jacob Lawrence (31), and Unidentified photographer (29).
 
    ***There is a tooltip applied to the Bar Chart showing Top 5 Artists by Artwork Count. This tooltip allows you see the image of the Artists when you hover on the chart***.
@@ -164,7 +164,7 @@ The project also enhanced user engagement with interactive elements like search 
 
 ## Recommendation
 1. **Promote Gender and Cultural Diversity**
-The data suggests a significant gender and regional imbalance in the collection. MoMA may benefit from initiatives to acquire and feature more works from underrepresented groups—particularly female, non-binary, and artists from less represented countries.
+The data suggests a significant gender and regional imbalance in the collection. MoMA may benefit from initiatives to acquire and feature more works from underrepresented groups—particularly female, non-binary, and artists from less represented countries like countries in Africa.
 
 2. **Digitize and Showcase Historical Artworks**
 Given the presence of artworks from various decades, digitizing older pieces and providing context around their historical significance could enhance educational value and engagement.
